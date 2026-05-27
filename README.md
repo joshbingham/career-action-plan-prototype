@@ -34,7 +34,7 @@ The implementation intentionally focuses on simplicity, usability and clean fron
 - Template selection interface
 - Conditional session setup form
 - Required field validation
-- Disabled/enabled continue state
+- Conditional continue button state based on required fields
 - Responsive layout
 - Confirmation state on completion
 
