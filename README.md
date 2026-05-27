@@ -2,6 +2,16 @@
 
 Frontend prototype for a careers adviser workflow setup screen.
 
+## Live Demo
+
+GitHub Pages deployment:
+https://joshbingham.github.io/career-action-plan-prototype/
+
+## Repository
+
+GitHub repository:
+https://github.com/joshbingham/career-action-plan-prototype
+
 ## Overview
 
 This project was built as part of a paid frontend practical task focused on:
