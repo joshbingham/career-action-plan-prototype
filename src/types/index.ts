@@ -1,0 +1,1 @@
+export type TemplateType = 'Elev8 CAP' | 'Manifest CAP';
