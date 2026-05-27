@@ -19,6 +19,8 @@ function App() {
     date.trim() !== '';
 
   function handleContinue() {
+    if (!isFormValid) return;
+
     setIsComplete(true);
   }
 
@@ -26,7 +28,7 @@ function App() {
 
   return (
     <main>
-      <h1>Session Setup</h1>
+      <h1>Career Action Plan Session Setup</h1>
 
       <div className="template-grid">
         <TemplateCard
@@ -43,6 +45,12 @@ function App() {
           onSelect={setSelectedTemplate}
         />
       </div>
+
+      {selectedTemplate && (
+        <p className="selected-template">
+          Selected template: <strong>{selectedTemplate}</strong>
+        </p>
+      )}
 
       {selectedTemplate && (
         <SessionForm

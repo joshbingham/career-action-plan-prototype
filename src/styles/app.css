@@ -50,6 +50,11 @@ h1 {
   margin-bottom: 12px;
 }
 
+.selected-template {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
 .session-form {
   margin-top: 32px;
   background: white;
@@ -80,6 +85,11 @@ h1 {
   font-size: 1rem;
 }
 
+.form-group input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
 .continue-button {
   margin-top: 24px;
   padding: 12px 20px;
@@ -103,4 +113,18 @@ h1 {
   border: 1px solid #86efac;
   border-radius: 8px;
   font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  main {
+    padding: 24px 16px;
+  }
+
+  .template-card {
+    padding: 20px;
+  }
+
+  .session-form {
+    padding: 20px;
+  }
 }

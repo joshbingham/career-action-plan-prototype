@@ -15,8 +15,11 @@ function TemplateCard({
 }: TemplateCardProps) {
   return (
     <button
+    
       className={`template-card ${selected ? 'selected' : ''}`}
       onClick={() => onSelect(title)}
+      type="button"
+      
     >
       <h2>{title}</h2>
       <p>{description}</p>
