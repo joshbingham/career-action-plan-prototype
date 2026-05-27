@@ -37,14 +37,14 @@ function App() {
       <div className="template-grid">
         <TemplateCard
           title="Elev8 CAP"
-          description="Structured action planning for student guidance sessions."
+          description="Career action planning focused on pathways, future goals and next steps."
           selected={selectedTemplate === 'Elev8 CAP'}
           onSelect={setSelectedTemplate}
         />
 
         <TemplateCard
           title="Manifest CAP"
-          description="Flexible career action planning and progression tracking."
+          description="Structured guidance planning with reflection, barriers and SMART actions."
           selected={selectedTemplate === 'Manifest CAP'}
           onSelect={setSelectedTemplate}
         />
