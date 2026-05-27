@@ -30,6 +30,10 @@ function App() {
     <main>
       <h1>Career Action Plan Session Setup</h1>
 
+      <p className="section-intro">
+        Select an action plan template to begin.
+      </p>
+
       <div className="template-grid">
         <TemplateCard
           title="Elev8 CAP"
@@ -63,7 +67,7 @@ function App() {
         />
       )}
 
-      {selectedTemplate && (
+      {selectedTemplate && !isComplete && (
         <button
           className="continue-button"
           disabled={!isFormValid}
