@@ -19,7 +19,8 @@ function TemplateCard({
       className={`template-card ${selected ? 'selected' : ''}`}
       onClick={() => onSelect(title)}
       type="button"
-      
+      aria-pressed={selected}
+
     >
       <h2>{title}</h2>
       <p>{description}</p>

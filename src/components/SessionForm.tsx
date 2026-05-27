@@ -29,6 +29,7 @@ function SessionForm({
           type="text"
           value={studentName}
           onChange={(e) => onStudentNameChange(e.target.value)}
+          placeholder="Enter student or client name"
         />
       </div>
 
@@ -42,6 +43,7 @@ function SessionForm({
           type="text"
           value={organisation}
           onChange={(e) => onOrganisationChange(e.target.value)}
+          placeholder="Enter organisation name"
         />
       </div>
 
