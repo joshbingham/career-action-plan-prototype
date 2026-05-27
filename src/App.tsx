@@ -1,10 +1,17 @@
 import { useState } from 'react';
 import TemplateCard from './components/TemplateCard';
+import SessionForm from './components/SessionForm';
 import type { TemplateType } from './types';
 
 function App() {
   const [selectedTemplate, setSelectedTemplate] =
     useState<TemplateType | null>(null);
+  const [studentName, setStudentName] = useState('');
+  const [organisation, setOrganisation] = useState('');
+
+  const today = new Date().toISOString().split('T')[0];
+
+  const [date, setDate] = useState(today);
 
   return (
     <main>
@@ -25,6 +32,17 @@ function App() {
           onSelect={setSelectedTemplate}
         />
       </div>
+
+      {selectedTemplate && (
+        <SessionForm
+          studentName={studentName}
+          organisation={organisation}
+          date={date}
+          onStudentNameChange={setStudentName}
+          onOrganisationChange={setOrganisation}
+          onDateChange={setDate}
+        />
+      )}
     </main>
   );
 }

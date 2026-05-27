@@ -49,3 +49,33 @@ h1 {
 .template-card h2 {
   margin-bottom: 12px;
 }
+
+.session-form {
+  margin-top: 32px;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+}
+
+.session-form h2 {
+  margin-bottom: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
