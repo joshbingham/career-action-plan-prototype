@@ -8,10 +8,21 @@ function App() {
     useState<TemplateType | null>(null);
   const [studentName, setStudentName] = useState('');
   const [organisation, setOrganisation] = useState('');
-
   const today = new Date().toISOString().split('T')[0];
-
   const [date, setDate] = useState(today);
+  const [isComplete, setIsComplete] = useState(false);
+
+  const isFormValid =
+    selectedTemplate &&
+    studentName.trim() !== '' &&
+    organisation.trim() !== '' &&
+    date.trim() !== '';
+
+  function handleContinue() {
+    setIsComplete(true);
+  }
+
+
 
   return (
     <main>
@@ -42,6 +53,22 @@ function App() {
           onOrganisationChange={setOrganisation}
           onDateChange={setDate}
         />
+      )}
+
+      {selectedTemplate && (
+        <button
+          className="continue-button"
+          disabled={!isFormValid}
+          onClick={handleContinue}
+        >
+          Continue
+        </button>
+      )}
+
+      {isComplete && (
+        <div className="confirmation-message">
+          Session setup complete
+        </div>
       )}
     </main>
   );
